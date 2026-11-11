@@ -5,7 +5,7 @@ body {
 
 
 main {
-    max-width:60%;
+    max-width:70%;
     width: 1000px;
     margin: auto;
     display: grid;
@@ -13,6 +13,7 @@ main {
     grid-template-areas: "n n"
                         "se as"
                         "f f";
+    gap: 15px;
 }
 
 nav{
@@ -26,14 +27,24 @@ section {
     grid-area: se;
 }
 
+section p {
+    text-align: justify;
+}
+
 aside {
     grid-area: as;
+}
+
+aside p {
+    text-align: center;
+    font-size: 30px;
 }
 
 footer {
     grid-area: f;
     text-align: center;
     background-color: grey;
+    border-radius: 5px;
 }
 
 nav ul {
@@ -57,4 +68,8 @@ nav ul li a:hover{
     border-radius: 14px;
     color: white;
 
+}
+
+img {
+    width: 100%;
 }
